@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.example.demo.applicationService.UserApplicationService;
+import com.example.demo.application.service.UserApplicationService;
 import com.example.demo.domain.user.model.MUser;
 import com.example.demo.domain.user.service.UserService;
 import com.example.demo.form.GroupOrder;
