@@ -13,6 +13,7 @@
 	<div class="text-center">
 		<form method="post" th:action="@{/login}" class="form-login">
 			<h2>ログイン</h2>
+			<p th:if="${session['SPRING_SECURITY_LAST_EXCEPTION']} != null" th:text="${session['SPRING_SECURITY_LAST_EXCEPTION'].message}" class="text-danger">ログインエラーメッセージ</p>
 			<div class="form-group">
 				<label for="userId" class="sr-only">userId</label>
 				<input type="text" class="form-control" placeholder="ユーザーID" name="userId"/>
